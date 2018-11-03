@@ -44,19 +44,19 @@ var questLib = [
 	 	image: "assets/images/###.png"
 	},
 	{
-	 	question: "What was the name of Sansa's direwolf?",
+	 	question: "What was the name of Sansa Stark's direwolf?",
 	 	answers: ["Nymeria", "Cat", "Meraxes", "Lady"],
 	 	correctAnswer: 3,
 	 	image: "assets/images/###.png"
 	},
 	{
-	 	question: "Who send an assasin to kill Bran Stark in his sickbed?",
+	 	question: "Who sent an assasin to kill Bran Stark in his sickbed?",
 	 	answers: ["His mother", "Littlefinger", "Queen Cersei", "Prince Joffrey"],
 	 	correctAnswer: 3,
 	 	image: "assets/images/###.png"
 	},
 	{
-	 	question: "What was the real identity of Arstan Whitebeard?",
+	 	question: "What was the real identity of the squire Arstan Whitebeard?",
 	 	answers: ["Rhaegar Targaryen", "Jon Connington", "Ser Barristan the Bold", "Varys"],
 	 	correctAnswer: 2,
 	 	image: "assets/images/###.png"

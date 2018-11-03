@@ -1,17 +1,20 @@
 body {
- }
- h1 {
- }
+}
+h1 {
+    float:left;
+}
 h2 {
 }
 section {
     background-color: black;
     color: white;
-    padding: 20px;
-    margin: 35px;
-    position: relative;
+    padding: 4%;
+    margin: 0 7% 3% 7%;
+    position: relative;    
+    font-size: 20px;
+    line-height: 35px;
+    clear: both;
 }
-footer {
 .answer {
     cursor: pointer;
     margin: 5px;
@@ -25,17 +28,34 @@ footer {
     height: 100%;
     background-color: blueviolet;
     color: white;
-    padding: 40px;
+    padding: 8%;
     box-sizing: border-box;
     font-size: 30px;
 }
-button {
-    cursor: pointer;
-    z-index: 15;
-    font-size: 24px;
+scoreBoard {
+    float: left;
+    margin: 2%;
+    background-color: aliceblue;
+    width: 20%;
+    padding: 2%;
+    height: 17px;
+    text-align: center;
+}
+#score {
+}
+#timer {
+}
+button {    
+    display: block;
+    margin: auto;
+    padding: 2%;
+    font-size: larger;
+    margin-top: 4%;
+}
+
 footer {
 }
- /* responsive styles! */
-@media screen and (max-width: 1015px) {
-    
- }
+    /* responsive styles! */
+    @media screen and (max-width: 1015px) {
+
+    }
