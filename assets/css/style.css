@@ -2,6 +2,9 @@ body {
     font-family: "Proza Libre", "Georgia", sans-serif;
     font-size: 20px;
     background-color: darkgrey;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../images/init-BG.jpg");
 }
 h1 {
     float:left;
@@ -17,7 +20,6 @@ h1 {
 h2 {
 }
 section {
-    background-color: #5A0019;
     color: antiquewhite;
     padding: 4%;
     margin: 0 7% 3% 7%;
@@ -25,6 +27,18 @@ section {
     top: -18px;  
     line-height: 35px;
     clear: both;
+}
+.sectionBG {
+    background-color: #5A0019;
+    opacity: .85;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#qText {
+    position: relative;
 }
 .answer {
     cursor: pointer;
@@ -85,7 +99,11 @@ button#newGame {
     font-size: small;
     padding-top: 8px;
 }
-#timer {
+#choices {
+    display: none;
+}
+#choices ol {
+    position: relative;
 }
 button {    
     display: block;
@@ -102,7 +120,23 @@ button {
 
 footer {
 }
-    /* responsive styles! */
-    @media screen and (max-width: 1015px) {
-
+/* responsive styles! */
+@media screen and (max-width: 750px) {
+    #timer {
+        font-size: 12px;
     }
+    h1 {
+        font-size: 65px;
+    }
+    section {
+        top: 0;
+    }
+}
+@media screen and (max-width: 550px) {
+    #score {
+        clear: both;
+    }
+    .scoreBoard {
+        width: 35%;
+    }
+} 

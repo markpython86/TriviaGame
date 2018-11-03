@@ -7,11 +7,11 @@ var timeToGuess;
 var timeTilNextQ;
 // settings
 var questionLength = 10; // seconds you have to guess
-var answerLength = 1; // seconds you're shown the answer
+var answerLength = 3; // seconds you're shown the answer
 var gameLength = 10; // number of questions per round
  function initGame(){
 	// display intro
-	$("#question").html('When you play Trivia of Thrones, you win or you die. Okay, you won\'t actually die, but some of these questions are very difficult, and you only have 10 seconds to answer, not enough time to google it! Good luck, and <em>Valar Morghulis</em>.<button id="startGame">Begin Game</button>');
+	$("#qText").html('When you play Trivia of Thrones, you win or you die. Okay, you won\'t actually die, but some of these questions are very difficult, and you only have 10 seconds to answer, not enough time to google it! Good luck, and <em>Valar Morghulis</em>.<button id="startGame">Begin Game</button>');
 	$("#result").hide();
 	$("#choices li").empty();
 	$(".scoreBoard").empty();
@@ -32,8 +32,8 @@ function newQuestion(){
 		currentQuestion = questLib[qNum];
 		questLib.splice(qNum, 1);
 		$("#result").empty().hide();
-		$("#question").html(currentQuestion.question);
-		$("#choices .answer").each(function(i){
+		$("#qText").html(currentQuestion.question);
+		$("#choices").show().find(".answer").each(function(i){
 			$(this).html(currentQuestion.answers[i]);
 		});
 		// start Question Timer
