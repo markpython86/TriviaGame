@@ -1,17 +1,28 @@
 body {
+    font-family: "Proza Libre", "Georgia", sans-serif;
+    font-size: 20px;
+    background-color: darkgrey;
 }
 h1 {
     float:left;
+     font-family: "Tangerine", serif;
+    font-size: 86px;
+    margin: 0px;
+    padding: 0;
+    position: relative;
+    z-index: 20;
+    color: #fff;
+    text-shadow: black -2px 3px 1px;
 }
 h2 {
 }
 section {
-    background-color: black;
-    color: white;
+    background-color: #5A0019;
+    color: antiquewhite;
     padding: 4%;
     margin: 0 7% 3% 7%;
-    position: relative;    
-    font-size: 20px;
+    position: relative;  
+    top: -18px;  
     line-height: 35px;
     clear: both;
 }
@@ -26,22 +37,53 @@ section {
     display: none;
     width: 100%;
     height: 100%;
-    background-color: blueviolet;
+    background-color: #193441;
     color: white;
     padding: 8%;
     box-sizing: border-box;
     font-size: 30px;
+    line-height: 42px;
+    background-repeat: no-repeat;
+    background-position: right top; 
 }
-scoreBoard {
+#result.correctResult {
+    background-image: url("../images/check-mark.png");
+     background-size: 250px 250px;
+}
+#result.wrongResult {
+    background-image: url("../images/red-x.png");
+     background-size: 230px 230px;
+}
+#result.timesUp {
+    background-image: url("../images/clock.png");
+     background-size: 230px 230px;
+}
+#result .gameOverText {
+    display: block;
+    font-size: smaller;
+    position: absolute;
+    bottom: 30px;
+    width: 85%;
+}
+button#newGame {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+
+.scoreBoard {
     float: left;
     margin: 2%;
-    background-color: aliceblue;
+    background-color: #c5bbac;
     width: 20%;
-    padding: 2%;
-    height: 17px;
+     padding: 15px 6px;
+    height: 52px;
+    box-sizing: border-box;
     text-align: center;
 }
 #score {
+    font-size: small;
+    padding-top: 8px;
 }
 #timer {
 }
@@ -49,8 +91,13 @@ button {
     display: block;
     margin: auto;
     padding: 2%;
-    font-size: larger;
+    font-size: 48px;
+    font-family: "Tangerine", serif;
     margin-top: 4%;
+    background-color: #280207;
+    border-color: #666;
+    border-radius: 7px;
+    color: white;
 }
 
 footer {
